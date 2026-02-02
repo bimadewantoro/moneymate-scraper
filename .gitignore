@@ -1,0 +1,35 @@
+# --- General Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+
+# --- Virtual Environments ---
+# Poetry sometimes creates .venv in the root
+.venv
+venv/
+env/
+ENV/
+
+# --- Environment Variables (CRITICAL) ---
+# Never commit your API keys or passwords
+.env
+.env.*
+
+# --- Distribution / Builds ---
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# --- Testing & Coverage ---
+.coverage
+htmlcov/
+.pytest_cache/
+
+# --- IDE Settings (Optional but recommended) ---
+.vscode/
+.idea/
+
+# --- OS Specifics ---
+.DS_Store
+Thumbs.db
