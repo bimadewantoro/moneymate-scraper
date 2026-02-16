@@ -1,35 +1,41 @@
-# --- General Python ---
+# === SECURITY-CRITICAL: Google OAuth Credentials ===
+# NEVER commit these files. They contain sensitive API tokens.
+credentials.json
+token.json
+
+# === Environment Variables ===
+.env
+.env.*
+!.env.example
+
+# === Python ===
 __pycache__/
 *.py[cod]
 *$py.class
+*.so
 
-# --- Virtual Environments ---
-# Poetry sometimes creates .venv in the root
-.venv
+# === Virtual Environments ===
+.venv/
 venv/
 env/
 ENV/
 
-# --- Environment Variables (CRITICAL) ---
-# Never commit your API keys or passwords
-.env
-.env.*
-
-# --- Distribution / Builds ---
+# === Distribution / Builds ===
 build/
 dist/
 *.egg-info/
 .eggs/
 
-# --- Testing & Coverage ---
+# === Testing & Coverage ===
 .coverage
 htmlcov/
 .pytest_cache/
+.mypy_cache/
 
-# --- IDE Settings (Optional but recommended) ---
+# === IDE Settings ===
 .vscode/
 .idea/
 
-# --- OS Specifics ---
+# === OS Specifics ===
 .DS_Store
 Thumbs.db
